@@ -1,0 +1,12 @@
+public enum IngredientType {
+  VEGETABLE,
+  CHEESE,
+  PROTEIN,
+  POTATOES,
+  BUN,
+  SEASONING,
+  SAUCE,
+  DRINK,
+  DRINK_ADDITIVE,
+  FATTY
+}
