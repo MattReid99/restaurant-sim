@@ -5,10 +5,10 @@ public class Results {
   public float AverageSatisfaction;
   public int Days;
 
-  public Results AppendTo(Results existing) {
-    existing.TotalRevenue += this.TotalRevenue;
-    existing.CustomersServed += this.CustomerServed;
-    existing.AverageSatisfaction += this.AverageSatisfaction;
-    existing.Days += Days;
+  public void Append(Results existing) {
+    this.TotalRevenue += existing.TotalRevenue;
+    this.CustomersServed += existing.CustomerServed;
+    this.AverageSatisfaction += existing.AverageSatisfaction;
+    this.Days += existing.Days;
   }
 }
