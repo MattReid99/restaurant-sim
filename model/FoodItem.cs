@@ -1,4 +1,4 @@
-using System.LINQ;
+using System.Linq;
 
 public class FoodItem {
   public string ItemName;
@@ -7,9 +7,9 @@ public class FoodItem {
   public float Quality;
   public float Cost;
 
-  public FoodItem(string itemName, Ingredient[] ingredients) {
+  public FoodItem(string itemName, Ingredient[] ingredients, FoodType foodType) {
     this.ItemName = itemName;
-    this.Ingredients = ingredients.Select(ingred => ingred.IngredientName);
+    this.Ingredients = ingredients.Select(ingred => ingred.IngredientName).ToArray();
   }
 
   public void UpdateCost(float pricingFactor) {
